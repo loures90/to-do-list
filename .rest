@@ -1,0 +1,53 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Fernando Teste",
+    "email": "teste2@teste.com",
+    "password": "testeteste"
+}
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "teste2@teste.com",
+    "password": "testeteste"
+}
+###
+
+POST http://localhost:3003/task/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMGNkMzZhNjctNWUwYS00ODliLWJlNWQtZTdhMzk3NjI4MWIxIiwiaWF0IjoxNjI0MjM1Nzc3LCJleHAiOjE2MjQyMzkzNzd9.sT4d8R6i5uk9q0bLfhi-_mXdNsB6-zRxO3A4tOpuWSM
+
+{
+    "task": "comprar ovo"
+}
+###
+GET http://localhost:3003/task/all
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMGNkMzZhNjctNWUwYS00ODliLWJlNWQtZTdhMzk3NjI4MWIxIiwiaWF0IjoxNjI0MjM2MDA2LCJleHAiOjE2MjQyMzk2MDZ9.yej-u6e_qZXnxx9101WxmVPRfc0Nh5nEyQu7wzH5kHM
+###
+
+###
+GET http://localhost:3003/task/get/ba28c8ad-c0c8-4f1c-897d-632da211361e
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMGNkMzZhNjctNWUwYS00ODliLWJlNWQtZTdhMzk3NjI4MWIxIiwiaWF0IjoxNjI0MjI3Nzc0LCJleHAiOjE2MjQyMzEzNzR9.lDVvLd8Ssxxy0NJH7n6sn4dzWzm36IoU016GULc8TPQ
+###
+
+
+DELETE  http://localhost:3003/task/ba28c8ad-c0c8-4f1c-897d-632da211361e
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMGNkMzZhNjctNWUwYS00ODliLWJlNWQtZTdhMzk3NjI4MWIxIiwiaWF0IjoxNjI0MjI3Nzc0LCJleHAiOjE2MjQyMzEzNzR9.lDVvLd8Ssxxy0NJH7n6sn4dzWzm36IoU016GULc8TPQ
+###
+
+
+PATCH  http://localhost:3003/task/939e56f6-9533-481e-8a9e-ede7513b925b
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMGNkMzZhNjctNWUwYS00ODliLWJlNWQtZTdhMzk3NjI4MWIxIiwiaWF0IjoxNjI0MjM2ODM4LCJleHAiOjE2MjQyNDA0Mzh9.MPKqyT8YBKETKKjaI05JU52d6lPjkvuCnb2S29KCatM
+
+{
+    "task": "ppp"
+}
+###
